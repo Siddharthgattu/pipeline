@@ -35,7 +35,7 @@ jobs:
       with:
         java-version: 1.8
     - name: Build
-      working-directory: ./pipeline/xml2json
+      working-directory: ./xml2json
       run: mvn clean package pom.xml
     - name: Stamp artifact file name with commit hash
       run: |
