@@ -24,17 +24,18 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
-    - uses: actions/cache@v1
-      with:
-        path: ~/.m2/repository
-        key: ${{ runner.os }}-maven-${{ hashFiles('**/pipeline/xml2json/pom.xml') }}
-        restore-keys: |
-          ${{ runner.os }}-maven-
+  #  - uses: actions/cache@v1
+   #   with:
+    #    path: ~/.m2/repository
+     #   key: ${{ runner.os }}-maven-${{ hashFiles('**/pipeline/xml2json/pom.xml') }}
+      #  restore-keys: |
+       #   ${{ runner.os }}-maven-
     - name: Set up JDK 1.8
       uses: actions/setup-java@v1
       with:
         java-version: 1.8
     - name: Build
+      working-directory: ./pipeline/xml2json
       run: mvn clean package pom.xml
     - name: Stamp artifact file name with commit hash
       run: |
