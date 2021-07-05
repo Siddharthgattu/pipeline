@@ -35,9 +35,8 @@ jobs:
       with:
         java-version: 1.8
     - name: Build
-      # working-directory: ./pipeline-poc
-      run: |
-        mvn -B package --file pom.xml
+      #working-directory: ./pipeline-poc
+      run: mvn -B package --file pom.xml
     - name: Stamp artifact file name with commit hash
       run: |
         artifactName1=$(ls target/*.jar | head -1)
