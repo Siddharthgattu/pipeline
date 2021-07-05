@@ -35,8 +35,8 @@ jobs:
       with:
         java-version: 1.8
     - name: Build
-      working-directory: ./xml2json
-      run: mvn clean package pom.xml
+      working-directory: ./pipeline-poc
+      run: mvn -B package --file pom.xml
     - name: Stamp artifact file name with commit hash
       run: |
         artifactName1=$(ls target/*.jar | head -1)
@@ -53,12 +53,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:    
     - uses: actions/checkout@v2
-    - uses: actions/cache@v1
-      with:
-        path: ~/.m2/repository
-        key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
-        restore-keys: |
-          ${{ runner.os }}-maven-
+   # - uses: actions/cache@v1
+    #  with:
+     #   path: ~/.m2/repository
+      #  key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
+       # restore-keys: |
+        #  ${{ runner.os }}-maven-
     - uses: actions/download-artifact@master
       with:
         name: artifacts
