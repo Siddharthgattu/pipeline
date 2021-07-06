@@ -36,7 +36,7 @@ jobs:
         java-version: 1.8
     - name: Build
       working-directory: ./rating-common-utilities
-      run: mvn clean package -s setting.xml
+      run: mvn clean install -s setting.xml
     - name: Stamp artifact file name with commit hash
       working-directory: ./rating-common-utilities
       run: |
