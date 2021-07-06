@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>37ccc848-19e8-4850-9aee-1d505f6ecc6b</groupId>
+	<groupId>7cd514f1-8942-4ffb-af8e-171c31286539</groupId>
 	<artifactId>rating-common-utilities</artifactId>
     <version>1.0.0</version>
     <packaging>mule-application</packaging>
@@ -126,8 +126,8 @@
     <distributionManagement>
     <repository>
       <id>MuleRepositoryX</id>
-        <name>SafeguardMuleRepository</name>
-         <url>https://maven.anypoint.mulesoft.com/api/v1/organizations/37ccc848-19e8-4850-9aee-1d505f6ecc6b/maven</url>
+        <name>tempMuleRepository</name>
+         <url>https://anypoint.mulesoft.com/home/organizations/7cd514f1-8942-4ffb-af8e-171c31286539/</url>
           <layout>default</layout>
        </repository>
       </distributionManagement>
