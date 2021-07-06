@@ -1,38 +1,4 @@
-Skip to content
-Search or jump to…
-
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@sg-sgattu 
-sgicloud
-/
-RRcommonMuleUtils
-Private
-0
-0
-0
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-Settings
-RRcommonMuleUtils/rating-common-utilities/pom.xml
-@sg-mnarang
-sg-mnarang Addition of generic-database call
-…
-Latest commit cfbf8ad 4 days ago
- History
- 1 contributor
-135 lines (127 sloc)  4.84 KB
-  
-<?xml version="1.0" encoding="UTF-8"?>
+ <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
@@ -167,16 +133,3 @@ Latest commit cfbf8ad 4 days ago
       </distributionManagement>
 
 </project>
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
-Loading complete
