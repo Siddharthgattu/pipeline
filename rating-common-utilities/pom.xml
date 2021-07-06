@@ -102,7 +102,7 @@
           <repository>
             <id>anypoint-exchange-v2</id>
             <name>Anypoint Exchange</name>
-            <url>https://maven.anypoint.mulesoft.com/api/v2/maven</url>
+            <url>https://anypoint.mulesoft.com/exchange</url>
             <layout>default</layout>
         </repository>
         <repository>
@@ -127,7 +127,7 @@
     <repository>
       <id>MuleRepositoryX</id>
         <name>tempMuleRepository</name>
-         <url>https://anypoint.mulesoft.com/home/organizations/7cd514f1-8942-4ffb-af8e-171c31286539/</url>
+         <url>https://anypoint.mulesoft.com/home/organizations/7cd514f1-8942-4ffb-af8e-171c31286539</url>
           <layout>default</layout>
        </repository>
       </distributionManagement>
