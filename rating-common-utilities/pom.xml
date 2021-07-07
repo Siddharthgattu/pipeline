@@ -90,13 +90,7 @@
             <artifactId>mongodb-driver-legacy</artifactId>
             <version>4.0.4</version>
         </dependency>
-    	<dependency>
-            <groupId>9648b4b5-95ba-46e6-9e84-e580e71f8cc8</groupId>
-            <artifactId>rating-common-utilities</artifactId>
-            <version>1.0.10-SNAPSHOT</version>
-            <classifier>mule-plugin</classifier>
-        </dependency>
-    </dependencies>
+      </dependencies>
 
 	<repositories>
           <repository>
