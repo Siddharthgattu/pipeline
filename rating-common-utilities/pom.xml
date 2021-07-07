@@ -100,7 +100,7 @@
 
 	<repositories>
           <repository>
-            <id>anypoint-exchange-v2</id>
+            <id>anypoint-exchange</id>
             <name>Anypoint Exchange</name>
             <url>https://anypoint.mulesoft.com/exchange</url>
             <layout>default</layout>
