@@ -5,10 +5,9 @@ name: Publising common utilities
 # Controls when the workflow will run
 on:
   # Triggers the workflow on push or pull request events but only for the master branch
-  push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
+  release: 
+    types: [published]
+  
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -34,9 +33,11 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 1.8
+#     - name: OWASP check or dependency scanning 
+    
     - name: Build
       working-directory: ./rating-common-utilities
-      run: mvn -B clean package -s setting.xml
+      run: mvn clean package -s setting.xml
     - name: Stamp artifact file name with commit hash
       working-directory: ./rating-common-utilities
       run: |
@@ -64,14 +65,13 @@ jobs:
       with:
         name: artifacts
         path: ./rating-common-utilities/target/*.jar
+        
+#     - name: publish to esxchange ?????
+    
     - name: Deploy to CloudHub
       working-directory: ./rating-common-utilities
       env:
         USERNAME: ${{ secrets.username }}
         PASSWORD: ${{ secrets.password }}
-      run: |
-        artifactName=$(ls *.jar | head -1)
-        mvn mule:deploy -Dmule.artifact=$artifactName -Danypoint.userName="$USERNAME" -Danypoint.password="$PASSWORD"
-                        
-
-    
+      run: mvn deploy -s setting.xml
+       
