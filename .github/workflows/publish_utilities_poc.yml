@@ -33,8 +33,9 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 1.8
-#     - name: OWASP check or dependency scanning 
-    
+    - name: OWASP check or dependency scanning
+      working-directory: ./rating-common-utilities
+      run: mvn dependency-check:check
     - name: Build
       working-directory: ./rating-common-utilities
       run: mvn clean package -s setting.xml
